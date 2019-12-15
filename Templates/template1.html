@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola, que tal {{nom}}</title>
+</head>
+<body>
+<header>
+    <h1>Mi sitio Web de Codigo</h1>
+    <p>Web Creada con Python-Flask</p>
+</header>
+
+<h2>Vamos a saludar</h2>
+ {% if nom %}
+    <h1>Hola como estas {{nom}} </h1>
+ {% else %}
+   <p>No has Ingresado ningun nombre</p>
+ {% endif %}
+</body>
+</html>

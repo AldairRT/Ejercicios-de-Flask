@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Enlaces mas Visitados</title>
+</head>
+<body>
+<h2>Enlaces aprendidos en codiGo</h2>
+{% if enl %}
+<ul>
+    {% for enlace in enl %}
+     <li><a href="{{enlace.url}}">{{enlace.Texto}}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No Hay enlaces que consultar</p>
+{% endif %}
+</body>
+</html>
